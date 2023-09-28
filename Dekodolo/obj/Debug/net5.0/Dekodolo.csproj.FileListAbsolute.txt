@@ -1,0 +1,16 @@
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\Dekodolo.csproj.AssemblyReference.cache
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\Dekodolo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\Dekodolo.AssemblyInfoInputs.cache
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\Dekodolo.AssemblyInfo.cs
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\Dekodolo.csproj.CoreCompileInputs.cache
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\bin\Debug\net5.0\Dekodolo.exe
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\bin\Debug\net5.0\Dekodolo.deps.json
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\bin\Debug\net5.0\Dekodolo.runtimeconfig.json
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\bin\Debug\net5.0\Dekodolo.runtimeconfig.dev.json
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\bin\Debug\net5.0\Dekodolo.dll
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\bin\Debug\net5.0\ref\Dekodolo.dll
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\bin\Debug\net5.0\Dekodolo.pdb
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\Dekodolo.dll
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\ref\Dekodolo.dll
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\Dekodolo.pdb
+C:\Users\Ny19MarcalekM\source\repos\Dekodolo\Dekodolo\obj\Debug\net5.0\Dekodolo.genruntimeconfig.cache
