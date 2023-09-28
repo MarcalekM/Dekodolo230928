@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Encodings;
@@ -30,11 +30,12 @@ namespace Dekodolo
             Console.WriteLine($"Karakterek száma: {karakterek.Count} db");
 
             char input = '\0';
+            bool res = false;
             do
             {
                 Console.Write("Input:  ");
-                input = char.Parse(Console.ReadLine());
-            } while (input < 65 || input > 90);
+                res = char.TryParse(Console.ReadLine(), out input);
+            } while (!res && (input < 65 || input > 90));
         }
     }
 }
