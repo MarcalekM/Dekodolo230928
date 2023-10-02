@@ -35,7 +35,7 @@ namespace Dekodolo
             {
                 Console.Write("Input:  ");
                 res = char.TryParse(Console.ReadLine(), out input);
-            } while (!res && (input < 65 || input > 90));
+            } while (!res || (input < 65 || input > 90));
         }
     }
 }
