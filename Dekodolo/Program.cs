@@ -22,7 +22,7 @@ namespace Dekodolo
                     string sor = sr.ReadLine();
                     for (int o = 0; o < sor.Length; o++)
                     {
-                        m[s, o] = sor[o] == '1' ? true : false;
+                        m[s, o] = sor[o] == '1';
                     }
                 }
                 karakterek.Add(new Karakter(b, m));
