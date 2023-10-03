@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Encodings;
+using System.Linq;
 
 namespace Dekodolo
 {
@@ -9,7 +10,7 @@ namespace Dekodolo
     {
         static void Main(string[] args)
         {
-            var karakterek = new List<Karakter>();
+            var bank = new List<Karakter>();
             using var sr = new StreamReader(
                 @"..\..\..\src\bank.txt",
                 System.Text.Encoding.UTF8);
@@ -25,9 +26,9 @@ namespace Dekodolo
                         m[s, o] = sor[o] == '1';
                     }
                 }
-                karakterek.Add(new Karakter(b, m));
+                bank.Add(new Karakter(b, m));
             }
-            Console.WriteLine($"Karakterek száma: {karakterek.Count} db");
+            Console.WriteLine($"Karakterek száma: {bank.Count} db");
 
             char input = '\0';
             bool res = false;
@@ -36,6 +37,10 @@ namespace Dekodolo
                 Console.Write("Input:  ");
                 res = char.TryParse(Console.ReadLine(), out input);
             } while (!res || (input < 65 || input > 90));
+
+            var mgj = bank.SingleOrDefault(k => k.Betu == input);
+            if (mgj is not null) Console.Write(mgj.Kirajzol());
+            else Console.WriteLine("Nincs ilyen a bankban");
         }
     }
 }
