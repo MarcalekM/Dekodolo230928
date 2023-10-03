@@ -10,24 +10,7 @@ namespace Dekodolo
     {
         static void Main(string[] args)
         {
-            var bank = new List<Karakter>();
-            using var sr = new StreamReader(
-                @"..\..\..\src\bank.txt",
-                System.Text.Encoding.UTF8);
-            while (!sr.EndOfStream)
-            {
-                char b = char.Parse(sr.ReadLine());
-                bool[,] m = new bool[7, 4];
-                for (int s = 0; s < 7; s++)
-                {
-                    string sor = sr.ReadLine();
-                    for (int o = 0; o < sor.Length; o++)
-                    {
-                        m[s, o] = sor[o] == '1';
-                    }
-                }
-                bank.Add(new Karakter(b, m));
-            }
+            var bank = Beolvas(@"..\..\..\src\bank.txt");
             Console.WriteLine($"Karakterek száma: {bank.Count} db");
 
             char input = '\0';
@@ -42,5 +25,29 @@ namespace Dekodolo
             if (mgj is not null) Console.Write(mgj.Kirajzol());
             else Console.WriteLine("Nincs ilyen a bankban");
         }
+
+        static List<Karakter> Beolvas(string eleresiUt)
+        {
+            var karakterek = new List<Karakter>();
+            using var sr = new StreamReader(
+                eleresiUt,
+                Encoding.UTF8);
+            while (!sr.EndOfStream)
+            {
+                char b = char.Parse(sr.ReadLine());
+                bool[,] m = new bool[7, 4];
+                for (int s = 0; s < m.GetLength(0); s++)
+                {
+                    string sor = sr.ReadLine();
+                    for (int o = 0; o < m.GetLength(1); o++)
+                    {
+                        m[s, o] = sor[o] == '1';
+                    }
+                }
+                karakterek.Add(new Karakter(b, m));
+            }
+            return karakterek;
+        }
+
     }
 }
