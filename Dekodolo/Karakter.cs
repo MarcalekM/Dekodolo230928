@@ -25,6 +25,18 @@ namespace Dekodolo
             return karakterKep;
         }
 
+        public bool Felismer(Karakter felism)
+        {
+            for (int s = 0; s < Matrix.GetLength(0); s++)
+            {
+                for (int o = 0; o < Matrix.GetLength(1); o++)
+                {
+                    if (this.Matrix[s, o] != felism.Matrix[s, o]) return false;
+                }
+            }
+            return true;
+        }
+
         public Karakter(char betu, bool[,] matrix)
         {
             Betu = betu;
